@@ -51,6 +51,7 @@ int itc_sqrt(int num)
         if (i * i == num)
             return i;
     }
+    return -1;
 }
 
 int skv(int a)
