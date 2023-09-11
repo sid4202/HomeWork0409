@@ -31,17 +31,7 @@ double itc_fabs(double n)
 
 int itc_revnbr(int num)
 {
-    int nReverse = 0;
-    int pOf10 = 100;
-    while(num > 0)
-    {
-        nReverse += (num % 10) * pOf10;
-
-        pOf10 /= 10;
-        num /= 10;
-    }
-
-    return nReverse;
+    return ((num % 10) * 100) + (((num / 10) % 10)) * 10 + num / 100;
 }
 
 
