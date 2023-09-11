@@ -28,8 +28,12 @@ double itc_scir(int  radius)
     return 3.14 * radius * radius;
 }
 
-int itc_pow(int num, int step)
+double itc_pow(int num, int step)
 {
+    if (step < 0)
+    {
+        return 1.0 / itc_pow(num, step * -1);
+    }
     if (step == 0)
     {
         return 1;
