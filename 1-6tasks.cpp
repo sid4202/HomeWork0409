@@ -47,5 +47,5 @@ int itc_revnbr(int num)
 
 bool itc_iseven(int num)
 {
-    return !(num % 2 == 0);
+    return (num % 2 == 0);
 }
