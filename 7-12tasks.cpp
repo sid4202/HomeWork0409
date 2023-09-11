@@ -33,7 +33,7 @@ double itc_fmax(double num1, double num2)
     }
 }
 
-double itc_min(double min1, double min2)
+double itc_fmin(double min1, double min2)
 {
     if(min1 >= min2)
     {
