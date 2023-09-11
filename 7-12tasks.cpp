@@ -23,7 +23,7 @@ int itc_min(int min1, int min2)
 
 }
 
-double itc_max(double num1, double num2)
+double itc_fmax(double num1, double num2)
 {
     if(num1 >= num2)
     {
