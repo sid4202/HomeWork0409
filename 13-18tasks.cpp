@@ -15,7 +15,7 @@ int itc_str(int a, int b, int c)
     if (a <= 0 || b <= 0 || c <= 0)
         return -1;
 
-    if (a >= c + b || b >= a + c || c >= a + b)
+    if (!(a < c + b && b < a + c && c < a + b))
         return -1;
 
     int p = (a + b + c) / 2;
