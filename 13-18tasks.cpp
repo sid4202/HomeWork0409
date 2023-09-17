@@ -25,6 +25,9 @@ int itc_str(int a, int b, int c)
 
 double itc_scir(int  radius)
 {
+    if (radius <= 0)
+        return -1;
+    
     return 3.14 * radius * radius;
 }
 
