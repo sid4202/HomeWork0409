@@ -60,7 +60,7 @@ int itc_sqrt(int num)
     return -1;
 }
 
-int skv(int a)
+int itc_skv(int a)
 {
     if (a <= 0)
         return -1;
