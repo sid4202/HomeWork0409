@@ -18,9 +18,9 @@ int itc_str(int a, int b, int c)
     if (!(a < c + b && b < a + c && c < a + b))
         return -1;
 
-    int p = (a + b + c) / 2;
+    double p = (a + b + c) / 2.0;
 
-    return itc_sqrt(p * (p - a) * (p - b) * (p - c));
+    return itc_sqrt((int)(p * (p - a) * (p - b) * (p - c)));
 }
 
 double itc_scir(int  radius)
